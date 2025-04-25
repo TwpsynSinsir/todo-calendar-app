@@ -18,7 +18,7 @@ const TaskList: React.FC = () => {
         setTasks(response.data) // Save data to state
       } catch (err) {
         setError('Failed to load tasks')
-        console.error('Error fetching tasks', err)
+        console.error('Error fetching tasks:', err)
       }
     }
 
